@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css?family=Merienda|Merriweather&display=swap");
+
+:root {
+  --mainDark: #302d32;
+  --mainGreen: #1fa746;
+  --mainWhite: #ffffff;
+  --mainGrey: #eeeeee;
+}
+body {
+  font-family: "Merienda", cursive;
+  background: var(--mainWhite);
+  color: var(--mainDark);
+}
+/* global */
+.text-green {
+  color: var(--mainGreen);
+}
+.text-slant {
+  font-family: "Merriweather", cursive;
+}
+.green__btn {
+  color: var(--mainGreen);
+  border: 0.1rem solid var(--mainGreen);
+  background: transparent;
+}
+.green__btn:hover {
+  background: var(--mainGreen);
+  color: var(--mainWhite);
+}
+.title-underline {
+  width: 12rem;
+  height: 0.3rem;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 2rem;
+}
+.title-underline__center {
+  position: absolute;
+  height: 0.5rem;
+  background: var(--mainGreen);
+  width: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+}
+/* .blockquote {
+  border-left: 0.5rem solid var(--mainGreen);
+} */
+/* navbar */
+.navbar {
+  background: var(--mainDark) !important;
+}
+.phone-icon {
+  color: var(--mainGreen);
+  border: 0.1rem solid var(--mainGreen);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+/* banner */
+#top2,
+#top3,
+#top4,
+#top5 {
+  margin-top: 4rem;
+}
+.banner-info {
+  min-height: calc(100vh - 101px);
+  background: var(--mainGrey);
+  position: relative;
+  margin-top: 6.3rem;
+}
+.banner-info__footer {
+  background: var(--mainGreen);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.banner-img {
+  min-height: calc(100vh - 101px);
+  /* min-height: 100vh; */
+  /* shorthand for an img css */
+  background: url("../img/bannerBcg_1.jpg") center/cover fixed no-repeat;
+  /* standart way of img css */
+  /* background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+  position: relative;
+}
+.banner-img__footer {
+  background: var(--mainDark);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 104px;
+  display: flex;
+  align-items: center;
+}
+/* about img section */
+.img-container {
+  position: relative;
+}
+.featured-icons {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+.featured-icon-left {
+  background: var(--mainDark);
+  padding: 0.5rem;
+  display: inline-block;
+  color: var(--mainWhite);
+}
+.featured-icon-right {
+  background: var(--mainGreen);
+  padding: 0.5rem;
+  display: inline-block;
+  color: var(--mainWhite);
+}
+/* featured section */
+.featured {
+  background: var(--mainGrey);
+}
+/* contact section */
+.contact {
+  background: var(--mainGreen);
+  color: var(--mainWhite);
+}
+.contact-btn {
+  background: transparent;
+  border: 0.1rem solid var(--mainWhite);
+  color: var(--mainWhite);
+}
+.contact-btn:hover {
+  background: var(--mainWhite);
+  color: var(--mainGreen);
+}
+/* /services section */
+.services,
+.tour {
+  background: linear-gradient(rgba(57, 60, 40, 0.7), rgba(23, 40, 23, 0.7)),
+    url("../img/bannerBcg_1.jpg") center/cover no-repeat fixed;
+}
+/* link -read more- in an img */
+.services-info-text {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--mainWhite);
+  background: var(--mainGreen);
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.services-info-text:hover {
+  color: var(--mainDark) !important;
+  text-align: center;
+  text-decoration: none;
+}
+.service-icon {
+  font-size: 2rem;
+  color: var(--mainGreen);
+  padding: 0.5rem;
+  border: 0.1rem solid var(--mainGreen);
+  /* border-radius: 50%; */
+  border-radius: 15%;
+  margin-right: 1rem;
+  transition: all 1s ease-in-out;
+}
+.service-icon:hover {
+  background: var(--mainGreen);
+  color: var(--mainGrey);
+  border: var(--mainGreen);
+}
+.service-link:hover {
+  text-decoration: none;
+  color: var(--mainWhite);
+}
+/* gallery */
+.gallery-btn {
+  color: var(--mainGreen);
+  background: var(--mainWhite);
+  border: 0.1rem solid var(--mainGreen);
+  border-radius: 50%;
+}
+.gallery-btn:hover {
+  background: var(--mainGreen);
+  color: var(--mainWhite);
+}
+.gallery-img-container {
+  position: relative;
+  transition: all 1s linear;
+  /* to hide btn and make it appear only by hover */
+  overflow: hidden;
+}
+.gallery-img-container:hover {
+  background: rgba(15, 26, 15, 0.7);
+}
+.gallery-img {
+  transition: all 0.5s linear;
+}
+.gallery-img-container:hover .gallery-img {
+  opacity: 0.3;
+}
+.gallery-info {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  /* to hide btn and make it appear only by hover */
+  transform: translate(-50%, 100%);
+  background: var(--mainGreen);
+  color: var(--mainWhite);
+
+  transition: all 0.3s linear;
+}
+.gallery-info:hover {
+  color: var(--mainDark);
+  text-decoration: none !important;
+}
+.gallery-img-container:hover .gallery-info {
+  /* to hide btn and make it appear only by hover */
+  transform: translate(-50%, 0);
+}
+.gallery-icon {
+  position: absolute;
+  color: var(--mainWhite);
+  top: 50%;
+  left: 50%;
+  font-size: 1.5rem;
+  transform: translate(-50%, -50%);
+  /* to hide +icon and make it appear only by hover */
+  opacity: 0;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.gallery-img-container:hover .gallery-icon {
+  /* to hide btn and make it appear only by hover */
+  opacity: 1;
+}
+/* tour */
+.tour-icon {
+  color: var(--mainGreen);
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background: var(--mainWhite);
+  border-radius: 30%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  /* transition: all 1s linear; */
+}
+.tour-icon:hover {
+  color: var(--mainWhite);
+  background: var(--mainGreen);
+}
+.footer {
+  background: var(--mainDark);
+}
